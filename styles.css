@@ -1,0 +1,200 @@
+body{
+    background-color: #ffffff;
+}
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(28, 2, 65);
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(28, 2, 65);
+}
+
+.container{
+    display: flex;
+
+}
+
+.item{
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+
+.par, h4, .price{
+    font-weight: bold;
+    background: rgba(250, 249, 249, 0.3);
+    padding: 4px;
+    color: rgb(19, 2, 44);
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.par{
+    top: 110px;
+    left: 30px;
+    opacity: 0;
+}
+
+.price{
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+}
+
+h4{
+
+    top: 20px;
+    left: 30px;
+}
+
+
+.one{
+    background-image: url(assets/images/1.JPG);
+}
+
+
+.two{
+    background-image: url(assets/images/2.jpg);
+}
+
+.three{
+    background-image: url(assets/images/3.jpg);
+}
+
+.four{
+    background-image: url(assets/images/4.jpg);
+}
+
+.five{
+    background-image: url(assets/images/5.jpg);
+}
+
+.six{
+    background-image: url(assets/images/6.jpg);
+}
+
+.selected{
+    flex: 4;
+}
+
+.selected h4{
+    font-size: 40px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.selected .par{
+    font-size: 20px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.selected .price{
+    font-size: 35px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.text-input{
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(247, 248, 248);
+    border: #d4d3d3 1px solid;
+}
+
+.view{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    color: rgb(28, 2, 65);
+    align-self: center;
+}
+
+.btn{
+    width: 240px;
+    height: 40px;
+    border: 2px #120156 solid;
+    background-color: rgb(247, 248, 248);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0px opx 10px;
+    color: rgb(28, 2, 65);
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover{
+    border: none;
+    background-color: #120156;
+    color: #ffffff;
+}
+
+@media all and (max-width:800px){
+    .container{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .selected h4{
+        font-size: 30px;
+    }
+    
+    .selected .par{
+        font-size: 16px;
+
+    }
+    
+    .selected .price{
+        font-size: 25px;
+    }
+}
+
+
+@media all and (max-width:500px){
+.container{
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+    h1{
+        font-size: 30px;
+    }
+
+    .selected h4{
+        font-size: 20px;
+    }
+    
+    .selected .par{
+        font-size: 10px;
+
+    }
+    
+    .selected .price{
+        font-size: 18px;
+    }
+}
+
+
